@@ -9,7 +9,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"> </script>
 <![endif]--> </head> <body>
 <header class="navbar navbar-fixed-top navbar-inverse"> <div class="container">
-<%= link_to "sample app", '#', id: "logo" %> <nav>
+<%= link_to "sample app", root_path , id: "logo" %> <nav>
 <ul class="nav navbar-nav navbar-right"> 
 <li><%= link_to "Home", root_path %></li> 
 <li><%= link_to "Help", help_path %></li> 
@@ -23,20 +23,9 @@
     <br>
 </div>
 
-<div class="col-sm-5" style="background-color:white;">
-      
+<div class="container2" align="center" >
+    <%= render 'layouts/footer' %> 
 </div>
 
-<div class="col-sm-3" style="background-color:white;">
-       <%= render 'layouts/footer' %>
-</div>
-
-<!--<div class="container2" align="center" >-->
-<!--    <%= render 'layouts/footer' %> -->
-<!--</div>-->
-
-<div class="col-sm-5" style="background-color:white;">
-      
-</div>
 </body>
 </html>
